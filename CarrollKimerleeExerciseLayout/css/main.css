@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color:antiquewhite;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 80%;
+    background-color: midnightblue;
+    padding: 100px;
+}
+
+/* Heading and Text CSS */
+
+h1, h2, h3, h4 {
+    color: #bbb;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-shadow: 1px 1px 1px red, 0 0 1em blue, 0 0 0.2em blue;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+h1{ 
+    text-shadow: none;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    display: block;
+    margin: auto
+}
+
+p {
+    color: #ddd;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 1.75rem;
+    padding-top: 2rem;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+a:link, a:visited, a:active {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #aaa;
+}
+
+.back {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Navigation */
+nav {
+    justify-content: end;
+    display: block;
+    margin: auto;
+}
+ul {
+    text-align: center;
+    padding-left: 0;
+}
+nav li {
+    display: inline;
+    list-style-type: none;
+    font-size: 1rem;
+    margin-right: 20px;
+}
+
+/* Footer */
+#references, footer>p {
+    font-size: smaller;
+}
+
+footer {
+    margin-top: 3rem;
+}
+/* LAYOUT CSS */
+/* Making header so it is Title (what could also be logo on) on the left and the navigation bar on the right. */
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Making image responsive */
+.flex-image {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-image img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 10px;
+    border:1px solid #ddd;
+}
+
+/* Taking the More section and creating card like areas */
+#more_features{
+    display:flex;
+    flex-flow: row wrap; 
+    /* The line above replaces having to use flex-direction and flex-wrap it combines it into one. */
+}
+
+#hub, #upcoming {
+    flex: 1 1 400px; /* must have this so that it will wrap before getting too small. but the two columns inside the row are even.*/
+    justify-content: space-beteween;
+}

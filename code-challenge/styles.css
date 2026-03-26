@@ -1,0 +1,56 @@
+body {
+  background-color: #eee;
+}
+
+.chalhead {
+  color: green;
+}
+
+.chaltext {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 3rem;
+  width: 25%;
+  padding:50px
+}
+
+
+.container {
+  margin: 50px;
+  padding: 20px;
+  text-align: center;
+  /* border:1px solid black; */
+}
+
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: hotpink;
+  font-size: 1.5rem;
+  padding: 10px
+}
+
+a:hover {
+  text-decoration: underline;
+  color: navy;
+}
+
+img{
+    width: 25%;
+    display: block;
+    margin: 50px auto;
+    padding: 50px;
+    height: 100%;
+}
+
+.main-content {
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px solid grey;
+}
+
+img, .chaltext {
+  flex: 1 1 300px;
+}
