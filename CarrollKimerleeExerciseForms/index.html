@@ -70,6 +70,38 @@
                     <a href="#top">Back to Top</a>
                 </div>
             </section>
+            <section>
+                <h2 id="contact">Contact Us</h2>
+                <form>
+                    <div>
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="reason">Reason for Message: </label>
+                        <select>
+                            <option value="information">More Information</option>
+                            <option value="correction">Correction</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message">Message: </label>
+                        <textarea id="message" cols="35" rows="10" required></textarea>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="emailList">
+                        <label for="emailList">I'd Like to Receive Emails on Updates</label>
+                    </div>
+                    <div>
+                        <button id="submitButton">Submit</button>
+                    </div>
+                </form>
+            </section>
         </main>
         <footer>
             <p id="references">
@@ -80,5 +112,6 @@
             <p>Created by Kimerlee Carroll</p>
         </footer>
     </div>
+    <script src="./js/main.js" defer></script>
 </body>
 </html>

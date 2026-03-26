@@ -119,3 +119,45 @@ header {
     flex: 1 1 400px; /* must have this so that it will wrap before getting too small. but the two columns inside the row are even.*/
     justify-content: space-beteween;
 }
+
+/* Form Styling */
+form {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    /* border:1px solid white; */
+}
+label{
+    color: #ddd;
+    font-size: 1.5rem;
+}
+input, textarea, select {
+    width: 100%;
+    margin: 10px auto;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+.checkbox input {
+    width: auto;
+    display: inline;
+}
+
+.checkbox label {
+    font-size: 1rem;
+}
+
+#submitButton{
+    display:block;
+    margin:30px auto;
+    width: 50%;
+    background-color: lightblue;
+    color: midnightblue;
+    font-size: 1.2rem;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#submitButton:hover {
+    background-color: teal;
+    color: #ccc;
+}
