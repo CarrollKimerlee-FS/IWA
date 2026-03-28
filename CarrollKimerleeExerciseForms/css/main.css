@@ -66,17 +66,23 @@ nav {
     margin: auto;
 }
 ul {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     padding-left: 0;
 }
 nav li {
-    display: inline;
+    
     list-style-type: none;
     font-size: 1rem;
     margin-right: 20px;
 }
 
 /* Footer */
+#references {
+    display:flex;
+    justify-content: space-between;
+}
 #references, footer>p {
     font-size: smaller;
 }
@@ -86,24 +92,16 @@ footer {
 }
 /* LAYOUT CSS */
 /* Making header so it is Title (what could also be logo on) on the left and the navigation bar on the right. */
-header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
+
 /* Making image responsive */
-.flex-image {
+
+
+img {
     display: flex;
     justify-content: center;
-}
-
-.flex-image img {
     max-width: 90%;
+    margin:auto;
     height: auto;
-    display: block;
-    margin: 2rem auto;
     border-radius: 10px;
     border:1px solid #ddd;
 }
@@ -117,7 +115,7 @@ header {
 
 #hub, #upcoming {
     flex: 1 1 400px; /* must have this so that it will wrap before getting too small. but the two columns inside the row are even.*/
-    justify-content: space-beteween;
+    justify-content: space-between;
 }
 
 /* Form Styling */
@@ -155,6 +153,7 @@ input, textarea, select {
     font-size: 1.2rem;
     padding: 5px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #submitButton:hover {
